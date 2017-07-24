@@ -1,0 +1,284 @@
+body{
+    background-image: url('../images/fond.png') ;
+    background-color: #469391;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position:relative;
+}
+
+/*----Affichage score-----*/
+
+#display{
+    margin-left:350px;
+    width: 250px;
+    height: 100px;
+    position:absolute;
+    background-color: transparent;
+    color:white;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin-top:90px;
+    font-size: 90px;
+}
+
+.title{
+    margin-left:80px;
+    margin-top: 140px;
+    position:absolute;
+    background-color: transparent;
+    position:absolute;
+}
+
+.bulle{
+    margin-left:390px;
+    margin-top: 450px;
+    background-color: transparent;
+    position:absolute;
+    visibility: hidden;
+}
+
+.fish{
+    z-index: 20;
+    margin-left:290px;
+    margin-top: 30px;
+    position:absolute;
+    background-color: transparent;
+}
+
+.smallfish{
+    z-index:10;
+    right:280px;
+    margin-top: 80px;
+    position:absolute;
+    background-color: transparent;
+}
+
+/*paupiere*/
+#close{
+
+    z-index:50;
+    text-align: center;
+    margin-top: 260px;
+    margin-left: 520px;
+    position:absolute;
+}
+
+/* bouttons -----------------------------------------------------------*/
+
+#compteur{
+ z-index: 250;
+ outline: none;
+ width: 203px;
+ height: 202px;
+ background-color: transparent;
+ position:absolute;
+ -webkit-box-shadow: none;
+ box-shadow: none;
+ margin-top: 260px;
+ margin-left: 520px;
+}
+
+
+/*multiplicateur*/
+.btn.btn-info{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../images/smallfish.png') ;
+    border: none;
+    background-color: transparent;
+    z-index: 100;
+    width: 200px;
+    height: 220px;
+    margin-top: 120px;
+    position:absolute;
+    right:270px;
+    font-size: 25px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    text-align: right;
+    outline: none;
+}
+
+.btn.btn-info:hover{
+ outline: none;
+ background-color: transparent;
+ -webkit-box-shadow: none;
+ box-shadow: none;
+ border: none;
+}
+
+/*bonus*/
+.btn.btn-danger{
+   border: none;
+   outline: none;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-image: url('../images/boue.png') ;
+   z-index: 100;
+   margin-top: 350px;
+   position:absolute;
+   right:50px;
+   width: 250px;
+   height: 100px;
+   text-align: right;
+   font-size: 25px;
+   font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.btn.btn-danger:hover{
+   outline: none;
+   background-color: transparent;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   border: none;
+}
+
+/*auto clicker*/
+.btn.btn-warning{
+    width: 300px;
+    height: 170px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../images/poulpe.png') ;
+    z-index:50;
+    margin-top: 380px;
+    left:50px;
+    position:absolute;
+    font-size: 25px;
+    font-family: 'Annie Use Your Telescope', cursive;
+    text-align: right;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+.btn.btn-warning:hover{
+ background-color: transparent;
+ outline: none;
+ border: none;
+ -webkit-box-shadow: none;
+ box-shadow: none;
+ border: none;
+}
+
+/*hak  -------sur l'ancre du logo  +1000 */
+#hak{
+    background-color: transparent;
+    width:40px;
+    z-index: 50;
+    left:200px;
+    margin-top: 270px;
+    position:absolute;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+/* Animations */
+
+.bubble,.bubble2,.bubble3 {
+    position: relative;
+    z-index: 1;
+    -webkit-animation: animateBubble 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    animation: animateBubble 7s linear infinite s, sideWays 1s ease-in-out infinite alternate;
+    padding-left:230px;
+    left: 10%;
+    -webkit-transform: scale(0.2);
+    -moz-transform: scale(0.2);
+    transform: scale(0.2);
+}
+
+
+
+
+
+/* tests pupille suit le pointer...
+
+#pupil{
+  top: 10%;
+  left: 10%;
+  background: radial-gradient(circle  at 100px 100px, #000000, #000); 
+  height: 55%;
+  width: 55%;
+  border-radius: 100%;
+  position: absolute;
+  -webkit-transform: scale(0.2);
+  -moz-transform: scale(0.2);
+  transform: scale(0.2);
+}
+@keyframes move {
+  50% {transform: translate(-50px, 50px);}
+}
+@keyframes move2 {
+  50% {transform: translate(-20px, 20px);}
+}
+
+
+
+*/
+
