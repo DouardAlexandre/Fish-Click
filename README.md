@@ -3,7 +3,7 @@
 
 ## réalisation et illustrations : Alexandre Douard
 
-#Github page :  https://kvort3x.github.io/Fish-Click/
+#Github page :  https://douardalexandre.github.io/Fish-Click/
 
 
 
